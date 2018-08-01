@@ -128,7 +128,7 @@ module.exports = ()=> {
   timeline.add({
     targets: '#background .background img',
     opacity: [{value: 0.4, duration: 300}, {delay: 1600, value: 1, duration: 300}, {delay: 2000, value: 0, duration: 500}],
-    bottom: [{value: -395, delay: 0, easing: 'easeInOutQuart'}, {delay: 1400, value: -89, duration: 400, easing: 'easeInOutQuart'}],
+    bottom: [{value: -395, delay: 0, easing: 'easeInOutQuart'}, {delay: 1400, value: -170, duration: 400, easing: 'easeInOutQuart'}],
     left: [{value: -150, delay: 0}, {delay: 1400, value: -15, duration: 400}],
     width: [{value: 600, delay: 0}, {delay: 1400, value: 339, duration: 400}],
     rotate: [{delay: 0, value: 0, duration: 0}, {delay: 1800, value: 30, duration: 4000, easing: 'linear'}],

@@ -48,13 +48,10 @@ html, body {
 .frame-back-to-bed {
     z-index: 3;
     position: absolute;
-    /* top: 20px; */
-    /* left: 70px; */
     opacity: 0;
-
-    /* top: -500px;
+    top: -500px;
     width: 2000px;
-    left: -1000px; */
+    left: -1000px;
 }
 
 .frame-items {

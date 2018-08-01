@@ -24,10 +24,10 @@ module.exports = ()=> {
   timeline.add({
     targets: '.frame-back-to-bed',
     offset: 2000 + sceneOne,
-    opacity: [{value: 1, duration: 500}, {delay: 4900, value: 0, duration: 900, easing: 'easeInOutQuart'}], // , {delay: 1200, value: 0, duration: 800}],
-    top: [{value: -500, duration: 0}, {value: 26, duration: 500}, {value: 23, duration: 50}, {value: 29, duration: 50}, {value: 23, duration: 50}, {value: 26, duration: 50}, {delay: 1300, value: -80, duration: 1250, easing: 'easeInOutQuart'}],
-    width: [{value: 2000, duration: 0}, {value: 295, duration: 500}],
-    right: [{value: -1000, duration: 0}, {value: 50, duration: 500}, {value: 47, duration: 50}, {value: 53, duration: 50}, {value: 47, duration: 50}, {value: 50, duration: 50}],
+    opacity: [{value: 1, duration: 300}, {delay: 4900, value: 0, duration: 900, easing: 'easeInOutQuart'}], // , {delay: 1200, value: 0, duration: 800}],
+    top: [{value: -68, duration: 0}, {value: 26, duration: 300}, {value: 23, duration: 50}, {value: 29, duration: 50}, {value: 23, duration: 50}, {value: 26, duration: 50}, {delay: 1300, value: -80, duration: 1250, easing: 'easeInOutQuart'}],
+    width: [{value: 2000, duration: 0}, {value: 295, duration: 300}],
+    right: [{value: -803, duration: 0}, {value: 50, duration: 300}, {value: 47, duration: 50}, {value: 53, duration: 50}, {value: 47, duration: 50}, {value: 50, duration: 50}],
     easing: 'easeInBack',
   });
 
@@ -110,7 +110,7 @@ module.exports = ()=> {
   timeline.add({
     targets: '#background .background img',
     opacity: [{value: 0.4, duration: 300}, {delay: 1600, value: 1, duration: 300}, {delay: 2000, value: 0, duration: 500}, {delay: 800, value: 1, duration: 800}],
-    bottom: [{value: -395, delay: 0, easing: 'easeInOutQuart'}, {delay: 1500, value: -213, duration: 400, easing: 'easeInOutQuart'}, {delay: 2000, value: -203}],
+    bottom: [{value: -395, delay: 0, easing: 'easeInOutQuart'}, {delay: 1900, value: -213, duration: 400, easing: 'easeInOutQuart'}, {delay: 2000, value: -203}],
     left: [{value: -150, delay: 0}, {delay: 1500, value: 93, duration: 400}, {delay: 2000, value: -92}],
     width: [{value: 600, delay: 0}, {delay: 1500, value: 578, duration: 400}],
     // rotate: [{delay: 0, value: 0, duration: 0}, {delay: 1800, value: 30, duration: 4000, easing: 'linear'}],

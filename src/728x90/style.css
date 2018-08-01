@@ -56,6 +56,9 @@ html, body {
     z-index: 3;
     position: absolute;
     opacity: 0;
+    top: -68px;
+    width: 2000px;
+    right: -803px;
 }
 
 .frame-items {

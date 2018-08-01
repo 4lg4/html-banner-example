@@ -52,9 +52,12 @@ html, body {
 }
 
 .frame-back-to-bed {
-    z-index: 3;
-    position: absolute;
-    opacity: 0;
+  z-index: 3;
+  position: absolute;
+  opacity: 0;
+  width: 2000px;
+  left: -1000px;
+  top: -500px;
 }
 
 .frame-items {

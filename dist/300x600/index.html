@@ -5,6 +5,7 @@
     <title>Banner</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="ad.size" content="width=300,height=600">
     <link href="style.css" rel="stylesheet">
 
     <script type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
@@ -38,9 +39,13 @@
         </div>
     </div>
 
-    <input class="progress" step=".001" type="range" min="0" max="100" value="0" style="width: 280px; position: absolute; top: 5px; left: 5px; z-index: 10000; opacity: 1;">
-    <div class="progress-number" style="overflow: hidden; width: 50px; position: absolute; top: 230px; left: 248px; z-index: 10000; background: white; opacity: 0;"></div>
     <script src="scripts.js"></script>
+    <script type="text/javascript">
+      var clickTag = "http://www.google.com";
+      document.querySelector('.frame-items').addEventListener('click', function(){
+        window.open(window.clickTag);
+      });
+    </script>
 </body>
 
 </html>
