@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Banner</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+</head>
+
+<body>
+    <div class="frame main">
+        <img class="frame-back-to-bed"src="img_back_to_bed.png" />
+        <img class="copy" src="img_copy.png" />
+    </div>
+
+    <div class="frame frame-items">
+        <div class="items">
+            <img class="item item-purple" src="img_item_purple_big.png">
+            <img class="item item-red" src="img_item_red.png">
+            <img class="item item-blue" src="img_item_blue.png">
+            <img class="item item-green" src="img_item_green.png">
+            <img class="item item-orange" src="img_item_orange.png">
+        </div>
+    </div>
+
+    <div id="background" class="frame">
+        <div class="background">
+            <div class="sprites-get-up" style="background-image: url('img_spritesheet_getup_mrec.png')"></div>
+            <div class="sprites-and-go" style="background-image: url('img_spritesheet_andgo_mrec.png')"></div>
+
+            <img src="img_glow.png" />
+        </div>
+    </div>
+
+    <input class="progress" step=".001" type="range" min="0" max="100" value="0" style="width: 280px; position: absolute; top: 5px; left: 5px; z-index: 10000; opacity: 1;">
+    <div class="progress-number" style="overflow: hidden; width: 50px; position: absolute; top: 230px; left: 248px; z-index: 10000; background: white; opacity: 0;"></div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

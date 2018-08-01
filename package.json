@@ -1,0 +1,47 @@
+{
+  "name": "nes0038-og-html-banners",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified, check README file\" && exit 1",
+    "start": "echo \"No start specified, check README file\" && exit 1",
+    "dev": "npm run dev-$BANNER",
+    "dev-": "echo \"\n\n-------------------------------------------- \nError: BANNER variable should be specified \n\n300x250 \n300x600 \n728x90 \n320x50 \n-------------------------------------------- \n\n \" && exit 1",
+    "dev-300x250": "webpack --config webpack.config.js --watch",
+    "dev-300x600": "webpack --config webpack.config.js --watch",
+    "dev-728x90": "webpack --config webpack.config.js --watch",
+    "dev-320x50": "webpack --config webpack.config.js --watch",
+    "build:all": "BANNER=300x250 npm run build-300x250 && BANNER=300x600 npm run build-300x600 && BANNER=728x90 npm run build-728x90 && BANNER=320x50 npm run build-320x50",
+    "build": "npm run build-$BANNER",
+    "build-": "echo \"\n\n-------------------------------------------- \nError: BANNER variable should be specified \n\n300x250 \n300x600 \n728x90 \n320x50 \n-------------------------------------------- \n\n \" && exit 1",
+    "build-300x250": "NODE_ENV=production webpack --config webpack.config.js",
+    "build-300x600": "NODE_ENV=production webpack --config webpack.config.js",
+    "build-728x90": "NODE_ENV=production webpack --config webpack.config.js",
+    "build-320x50": "NODE_ENV=production webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/workssydney/nes0038-og-html-banners.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/workssydney/nes0038-og-html-banners#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "eslint": "4.18.1",
+    "eslint-config-google": "0.9.1",
+    "mini-css-extract-plugin": "^0.4.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.0",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
+  }
+}
