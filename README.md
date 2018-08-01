@@ -14,7 +14,7 @@
 
 ## Development
 ```bash
-  BANNER=300x250 npm start
+  BANNER=300x250 npm run dev
 ```
 > after run the command open the index file located in /dist/$BANNER
 
